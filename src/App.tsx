@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Form from './components/Form/Form'
-import './App.css';
+import './App.scss';
 
 const App: React.FC = () => {
   return (

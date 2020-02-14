@@ -19,3 +19,13 @@ export interface ITeam {
   name: string
   members: number[]
 }
+
+export interface IInput {
+  name: string
+  register: any
+  type: string
+  errors: any
+  label?: string
+  args?: any[]
+  customLabel?: any
+}

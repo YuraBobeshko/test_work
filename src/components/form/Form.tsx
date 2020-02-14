@@ -2,12 +2,12 @@ import React from "react";
 import { useForm } from "react-hook-form";
 
 import Input from "../Input/Input";
-import "./form.css";
+import "./form.scss";
 
 const Form: React.FC = () => {
   const { handleSubmit, register, errors } = useForm({});
   const onSubmit = (values: any) => {
-    alert(values);
+    console.info(values);
   };
 
   return (
@@ -18,7 +18,7 @@ const Form: React.FC = () => {
       </a>
       <form className={"form"} onSubmit={handleSubmit(onSubmit)}>
         <Input
-          name={"email"}
+          name={"e.g.john.doe@gmail.com"}
           type={"text"}
           label={"E-mail"}
           errors={errors}
@@ -31,7 +31,7 @@ const Form: React.FC = () => {
           })}
         />
         <Input
-          name={"password"}
+          name={"●●●●●●●●●●●●●"}
           type={"password"}
           label={"Password"}
           errors={errors}

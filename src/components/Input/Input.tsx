@@ -1,19 +1,9 @@
 import React from 'react'
 
-import './Input.css'
-
-interface IInput {
-  name: string
-  register: any
-  type: string
-  errors: any
-  label?: string
-  args?: any[]
-  customLabel?: any
-}
+import { IInput } from '../../interfaces/interfaces'
+import './Input.scss'
 
   const Input: React.FC<IInput> = ({name, register, type, errors, customLabel, label, ...args}) => {
-  console.log(errors)
   return (
     <>
       <div className={type === 'checkbox' ? 'content-checkbox' : 'content'}>
@@ -29,7 +19,7 @@ interface IInput {
           placeholder={name}
           {...args}
         />
-        {customLabel && <label className={'label'} htmlFor={name}>{customLabel}</label>}
+        {customLabel && <label className={'customLabel'} htmlFor={name}>{customLabel}</label>}
       </div>
       {errors![name] && <span className={'error'}>{errors![name].message}</span>}
     </>
