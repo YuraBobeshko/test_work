@@ -1,15 +1,15 @@
 import { IArticle, IAuthor, ITeam } from "../../interfaces/interfaces";
 
-function getTeamArticlesDescription(x: number): any {
+function getTeamArticlesDescription(x: number): string | never {
   const currentTeam: ITeam | null = teams.find(team => team.id === x) || null;
 
-  if (!currentTeam) throw new TypeError("wrong team");
+  if (!currentTeam) return "wrong team";
 
   const result = currentTeam!.members.map(member => {
     const currentAuthors: IAuthor | null =
       authors.find(author => author.id === member) || null;
 
-    if (!currentAuthors) throw new TypeError("wrong author");
+    if (!currentAuthors) return "wrong author";
 
     const currentArticles: IArticle[] = articles.filter(article => {
       if (!article.authors) return false;
@@ -49,7 +49,7 @@ const articles: IArticle[] = [
   { id: 23, text: "Firebase", authors: [7, 2, 3] },
   { id: 333, text: "Really cool article" },
   { id: 1234, text: "Ramda.js and Redux combined", authors: [2] },
-  { id: 2, text: "CSS in JS", authors: [3, 5] }
+  { id: 2, text: "CSS in JS", authors: [3, 5] },
 ];
 
 const authors: IAuthor[] = [
@@ -59,12 +59,13 @@ const authors: IAuthor[] = [
   { id: 4, name: "Peter" },
   { id: 5, name: "Tomas" },
   { id: 6, name: "Drahoslav" },
-  { id: 7, name: "Honza" }
+  { id: 7, name: "Honza" },
 ];
 
 const teams: ITeam[] = [
   { id: 1, name: "Webscope 1", members: [1, 2, 3, 4] },
-  { id: 2, name: "Webscope 2", members: [5, 6, 7] }
+  { id: 2, name: "Webscope 2", members: [5, 6, 7] },
 ];
 
+module.exports = { getTeamArticlesDescription };
 export default getTeamArticlesDescription;
