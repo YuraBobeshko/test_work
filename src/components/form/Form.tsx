@@ -13,13 +13,12 @@ const Form: React.FC = () => {
   return (
     <form onSubmit={handleSubmit(onSubmit)} className={"form"}>
       <p className={"form__heading"}>Log in to Example</p>
-      <a className={"form__link-head"} href="/">
-        or create an account
-      </a>
+      <a className={"form__link-head"} href="/">or create an account</a>
         <Input
-          name={"e.g.john.doe@gmail.com"}
+          name={"email"}
           type={"text"}
           label={"E-mail"}
+          placeholder={"e.g.john.doe@gmail.com"}
           errors={errors}
           register={register({
             required: "Required",
@@ -30,10 +29,11 @@ const Form: React.FC = () => {
           })}
         />
         <Input
-          name={"●●●●●●●●●●●●●"}
+          name={"password"}
           type={"password"}
           label={"Password"}
           errors={errors}
+          placeholder={"●●●●●●●●●●●●●"}
           register={register({
             required: "Required",
             minLength: {
@@ -49,7 +49,7 @@ const Form: React.FC = () => {
         <Input
           name={"checkbox"}
           type={"checkbox"}
-          customLabel={<p>Agree with <a href={'/'}>Terms & Conditions</a></p>}
+          label={<p>Agree with <a href={'/'}>Terms & Conditions</a></p>}
           errors={errors}
           register={register({
             required: "is required"

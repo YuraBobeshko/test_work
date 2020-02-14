@@ -3,23 +3,21 @@ import React from 'react'
 import { IInput } from '../../interfaces/interfaces'
 import './Input.scss'
 
-  const Input: React.FC<IInput> = ({name, register, type, errors, customLabel, label, ...args}) => {
+  const Input: React.FC<IInput> = ({name, register, type, errors, label, ...args}) => {
   return (
     <>
       <div className={type === 'checkbox' ? 'content-checkbox' : 'content'}>
-        { label &&
-          <label className={'label'} htmlFor={name}>{label}</label>
-        }
         <input
           id={name}
           name={name}
-          className={type === 'checkbox' ? 'checkbox' : 'input'}
+          className={errors![name] ? 'error' : ''}
           type={type}
           ref={register}
-          placeholder={name}
           {...args}
         />
-        {customLabel && <label className={'customLabel'} htmlFor={name}>{customLabel}</label>}
+        { label &&
+          <label className={'label'} htmlFor={name}>{label}</label>
+        }
       </div>
       {errors![name] && <span className={'error'}>{errors![name].message}</span>}
     </>

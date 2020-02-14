@@ -25,7 +25,6 @@ export interface IInput {
   register: any
   type: string
   errors: any
-  label?: string
   args?: any[]
-  customLabel?: any
+  [key: string]: any
 }
