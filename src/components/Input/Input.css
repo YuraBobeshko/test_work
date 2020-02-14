@@ -1,0 +1,37 @@
+.input {
+  box-sizing: border-box;
+  border: 1px solid #D3D6DE;
+  border-radius: 5px;
+  height: 40px;
+  padding: 10px 13px;
+  width: 100%;
+  outline:none;
+}
+
+.input:focus {
+  border: 2px solid #02B2E5;
+}
+
+.content-checkbox {
+  display: flex;
+}
+
+.error {
+  color: red;
+}
+
+.checkbox {
+  display: inline;
+}
+
+.input::placeholder {
+  color:#B9B9C3;
+}
+
+
+.label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #202024;
+  margin-bottom: 10px;
+}
