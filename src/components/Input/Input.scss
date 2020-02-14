@@ -6,6 +6,7 @@
   padding: 10px 13px;
   width: 100%;
   outline:none;
+  margin-bottom: 20px;
 
   &:focus {
     border: 2px solid #02B2E5;
@@ -19,6 +20,7 @@
 .content-checkbox {
   display: flex;
   align-items: center;
+  margin-bottom: 17px;
 }
 
 .error {
@@ -46,6 +48,7 @@
 .checkbox:checked + .customLabel:before {
   background-image: url('./check.svg');
 }
+
 .customLabel {
   display: flex;
   align-items:center;

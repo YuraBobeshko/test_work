@@ -1,4 +1,4 @@
-const { unique } = require("./unique.js");
+import unique from './unique'
 
 describe("unique", () => {
   test("usual case", () => {

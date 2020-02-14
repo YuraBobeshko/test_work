@@ -11,12 +11,11 @@ const Form: React.FC = () => {
   };
 
   return (
-    <div className={"wrapper-form"}>
+    <form onSubmit={handleSubmit(onSubmit)} className={"form"}>
       <p className={"form__heading"}>Log in to Example</p>
       <a className={"form__link-head"} href="/">
         or create an account
       </a>
-      <form className={"form"} onSubmit={handleSubmit(onSubmit)}>
         <Input
           name={"e.g.john.doe@gmail.com"}
           type={"text"}
@@ -56,12 +55,11 @@ const Form: React.FC = () => {
             required: "is required"
           })}
         />
-        <button className={"form-btn"} type="submit">
+        <button className={"btn form-btn"} type="submit">
           Login
         </button>
-      </form>
       <a className={"form__link"} href="/" onClick={() => alert("it's not my problem")}>Forgotten password?</a>
-    </div>
+    </form>
   );
 };
 

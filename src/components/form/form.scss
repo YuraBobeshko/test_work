@@ -1,18 +1,8 @@
-.wrapper-form {
-  width: 300px;
-  height: 399px;
-  text-align: center;
-}
-
 .form {
   width: 300px;
-  height: 247px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  text-align: center;
 
   &__heading {
-    text-align: center;
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -24,23 +14,8 @@
     margin-bottom: 52px;
   }
 
-  &__link {
-    display: block;
-    margin: 17px 0 0;
-  }
-
   &-btn {
-    border: none;
-    background: #02B2E5;
-    border-radius: 5px;
-    width: 100%;
+    margin-bottom: 18px;
     height: 40px;
-    color: #fff;
-    font-weight: bold;
-    cursor: pointer;
-
-    &:hover {
-      background: rgb(6, 189, 240);
-    }
   }
 }
