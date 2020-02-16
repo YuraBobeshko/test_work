@@ -6,5 +6,4 @@ function parseNPMVersion(x: string): IParseNPMVersion | null {
   return { name: result[0], version: result[1] };
 }
 
-module.exports = { parseNPMVersion }
 export default parseNPMVersion;

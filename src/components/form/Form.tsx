@@ -47,7 +47,7 @@ const Form: React.FC = () => {
           })}
         />
         <Input
-          name={"checkbox"}
+          name={"agree"}
           type={"checkbox"}
           label={<p>Agree with <a href={'/'}>Terms & Conditions</a></p>}
           errors={errors}

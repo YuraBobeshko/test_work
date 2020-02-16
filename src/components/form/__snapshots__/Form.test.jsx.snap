@@ -1,0 +1,179 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<form
+  className="form"
+  onSubmit={[Function]}
+>
+  <p
+    className="form__heading"
+  >
+    Log in to Example
+  </p>
+  <a
+    className="form__link-head"
+    href="/"
+  >
+    or create an account
+  </a>
+  <div
+    className="content"
+  >
+    <input
+      className=""
+      id="email"
+      name="email"
+      placeholder="e.g.john.doe@gmail.com"
+      type="text"
+    />
+    <label
+      className="label"
+      htmlFor="email"
+    >
+      E-mail
+    </label>
+  </div>
+  <div
+    className="content"
+  >
+    <input
+      className=""
+      id="password"
+      name="password"
+      placeholder="●●●●●●●●●●●●●"
+      type="password"
+    />
+    <label
+      className="label"
+      htmlFor="password"
+    >
+      Password
+    </label>
+  </div>
+  <div
+    className="content-checkbox"
+  >
+    <input
+      className=""
+      id="agree"
+      name="agree"
+      type="checkbox"
+    />
+    <label
+      className="label"
+      htmlFor="agree"
+    >
+      <p>
+        Agree with 
+        <a
+          href="/"
+        >
+          Terms & Conditions
+        </a>
+      </p>
+    </label>
+  </div>
+  <button
+    className="btn form-btn"
+    type="submit"
+  >
+    Login
+  </button>
+  <a
+    className="form__link"
+    href="/"
+    onClick={[Function]}
+  >
+    Forgotten password?
+  </a>
+</form>
+`;
+
+exports[`Form changes the text after click is form with error 1`] = `
+<form
+  className="form"
+  onSubmit={[Function]}
+>
+  <p
+    className="form__heading"
+  >
+    Log in to Example
+  </p>
+  <a
+    className="form__link-head"
+    href="/"
+  >
+    or create an account
+  </a>
+  <div
+    className="content"
+  >
+    <input
+      className=""
+      id="email"
+      name="email"
+      placeholder="e.g.john.doe@gmail.com"
+      type="text"
+    />
+    <label
+      className="label"
+      htmlFor="email"
+    >
+      E-mail
+    </label>
+  </div>
+  <div
+    className="content"
+  >
+    <input
+      className=""
+      id="password"
+      name="password"
+      placeholder="●●●●●●●●●●●●●"
+      type="password"
+    />
+    <label
+      className="label"
+      htmlFor="password"
+    >
+      Password
+    </label>
+  </div>
+  <div
+    className="content-checkbox"
+  >
+    <input
+      className=""
+      id="agree"
+      name="agree"
+      type="checkbox"
+    />
+    <label
+      className="label"
+      htmlFor="agree"
+    >
+      <p>
+        Agree with 
+        <a
+          href="/"
+        >
+          Terms & Conditions
+        </a>
+      </p>
+    </label>
+  </div>
+  <button
+    className="btn form-btn"
+    type="submit"
+  >
+    Login
+  </button>
+  <a
+    className="form__link"
+    href="/"
+    onClick={[Function]}
+  >
+    Forgotten password?
+  </a>
+</form>
+`;

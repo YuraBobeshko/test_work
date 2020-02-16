@@ -67,5 +67,4 @@ const teams: ITeam[] = [
   { id: 2, name: "Webscope 2", members: [5, 6, 7] },
 ];
 
-module.exports = { getTeamArticlesDescription };
 export default getTeamArticlesDescription;

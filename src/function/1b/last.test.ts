@@ -1,4 +1,4 @@
-const { last } = require("./last.js");
+import last from './last'
 
 describe('last', () => {
   test("usual case", () => {
@@ -12,4 +12,4 @@ describe('last', () => {
   test("empty array", () => {
     expect(last([])).toBeUndefined()
   });
-})
+});

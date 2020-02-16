@@ -1,6 +1,4 @@
-const {
-  getTeamArticlesDescription
-} = require("./getTeamArticlesDescription.js");
+import getTeamArticlesDescription from './getTeamArticlesDescription'
 
 describe("getTeamArticlesDescription", () => {
   const case1 = `Oliver wrote an article 'RxJS and redux-observable'.

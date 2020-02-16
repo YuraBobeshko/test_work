@@ -1,4 +1,4 @@
-const { duplicate } = require("./duplicate.js");
+import duplicate from './duplicate'
 
 describe('duplicate', () => {
   test("usual case", () => {

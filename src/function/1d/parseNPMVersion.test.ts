@@ -1,4 +1,4 @@
-const { parseNPMVersion } = require("./parseNPMVersion.js");
+import parseNPMVersion from './parseNPMVersion'
 
 describe("parseNPMVersion", () => {
   test("usual case", () => {
