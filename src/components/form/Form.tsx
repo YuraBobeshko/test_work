@@ -2,7 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 
 import Input from "../Input/Input";
-import "./form.scss";
+import "./Form.scss";
 
 const Form: React.FC = () => {
   const { handleSubmit, register, errors } = useForm({});

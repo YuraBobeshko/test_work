@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Form from './components/Form/Form'
+import Form from './components/form/Form'
 import unique from './function/1c/unique'
 import './App.scss';
 
